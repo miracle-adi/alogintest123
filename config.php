@@ -11,5 +11,6 @@ $conn = mysqli_connect($db_hostname, $db_username, $db_password, $db_name) or di
 	id int(10) AUTO_INCREMENT,
     username varchar(255),
     password varchar(255),
-    created_at datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    created_at datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT PK_user PRIMARY KEY (id)
 ); -->
